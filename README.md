@@ -1,5 +1,9 @@
 Automated setup for an insecure login page, for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops!
 
+Other common vulnerabiltiies to be added for testing. Currently supporting:
+  - A3:2017-Sensitive Data Exposure (HTTP Logins)
+  - A7:2017-Cross-Site Scripting (Reflective XSS)
+
 Using HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 (PHP)
 
 To use:
