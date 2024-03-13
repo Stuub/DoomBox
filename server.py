@@ -35,6 +35,7 @@ with socketserver.TCPServer(("", PYTHON_PORT), MyHttpRequestHandler) as httpd:
     # Start the PHP server
     php_server_process = start_php_server()
     print(f"PHP server running at localhost:{PHP_PORT}")
+    print("http://localhost:8000/index.html")
 
     try:
         # Start the Python HTTP server and keep it running until interrupted

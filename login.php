@@ -6,15 +6,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     // Check if username and password are correct (for demonstration purposes, hardcoded credentials are used)
-    $valid_username = "user123";
-    $valid_password = "password123";
+    $valid_username = "username";
+    $valid_password = "password";
 
     if ($username === $valid_username && $password === $valid_password) {
         // Authentication successful
         echo "Login successful!";
+        echo "Your username is: " . $username;
+        echo "Your password is: " . $password;
     } else {
         // Authentication failed
-        echo "Invalid username or password.";
+        echo "Sorry ". $username . " Invalid username or password.";
     }
 }
 ?>
