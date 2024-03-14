@@ -5,12 +5,17 @@ import time
 
 def buildDocker():
     print("\nBuilding Docker Image")
-    subprocess.Popen("docker build -t doombox .", stdout=subprocess.PIPE, shell=True)
+    subprocess.run("docker build --no-cache -t doombox .", shell=True)
 
-container_id = subprocess.getoutput('docker ps -a -q -f name=doombox_container')
-ip_address = subprocess.getoutput("docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' doombox_container")
+# Define container_id and ip_address as global variables
+container_id = None
+ip_address = None
 
 def runDocker():
+    global container_id, ip_address  # Declare them as global inside the function
+
+    container_id = subprocess.getoutput("docker ps -aqf name=doombox_container")
+
     print("\nRunning Docker Image")
     # Check if the container exists
     if container_id:
@@ -20,16 +25,21 @@ def runDocker():
     # Start a new container
     subprocess.Popen("docker run -d --name doombox_container -p 8080:8080 doombox", stdout=subprocess.PIPE, shell=True)
     print("Initialising...")
-    time.sleep(5)
+    time.sleep(3)  # Wait for 10 seconds
 
-    # Get the IP address of the container
+    # Update container_id and ip_address
+    ip_address = subprocess.getoutput("docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' doombox_container")
+
     print(f"\nDocker container is running at IP address: {ip_address}")
 
 def stopDocker():
+    global container_id 
+    container_id = subprocess.getoutput("docker ps -aqf name=doombox_container")
+    
     if container_id:
         print("\nStopping Docker Container: ", container_id)
-        subprocess.Popen("docker stop doombox_container", stdout=subprocess.PIPE, shell=True)
-        subprocess.Popen(f"docker rm -f {container_id}", stdout=subprocess.PIPE, shell=True)
+        subprocess.call("docker stop doombox_container", stdout=subprocess.PIPE, shell=True)
+        subprocess.call(f"docker rm -f {container_id}", stdout=subprocess.PIPE, shell=True)
     else:
         print("\nNo DoomBox docker present")
 

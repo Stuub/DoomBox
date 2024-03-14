@@ -1,9 +1,9 @@
-# Install Python3 (Upgrading shells)
-RUN sudo apt-get update
-RUN sudo apt-get install -y python3
-
 # Use the official PHP Docker image with Apache
 FROM php:7.4-apache
+
+# Install Python3 (Upgrading shells)
+RUN apt-get update
+RUN apt-get install -y python3
 
 # Copy the PHP files into the image
 COPY index.html /var/www/html/
