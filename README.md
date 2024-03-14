@@ -3,6 +3,7 @@ Automated setup for an insecure login page, initially developed for a packet sni
 
 Common vulnerabiltiies added for testing. Currently supporting:
   - A3:2017-Sensitive Data Exposure (HTTP Logins)
+  - A2:2017-Broken Authentication (Login Page Bruteforcing)
   - A7:2017-Cross-Site Scripting (Reflective XSS)
   - A1:2017-Injection (Remote Code Execution)
 
