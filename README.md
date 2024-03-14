@@ -11,7 +11,8 @@ Common vulnerabiltiies added for testing. Currently supporting:
 <h2>Lite vs Docker</h2>
 
 <b>Lite:</b>
-
+  
+  - Simplicity in mind 
   - Purely Python based
   - Web Server hosted on users local file system
   - HTTP & PHP Servers - Ports 8000 (HTTP) & 8001 (PHP)
