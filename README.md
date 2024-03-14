@@ -1,4 +1,4 @@
-Automated setup for an insecure login page, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment for your localhost!
+Automated setup for an insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment for your localhost!
 
 
 Common vulnerabiltiies added for testing. Currently supporting:
