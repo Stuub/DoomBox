@@ -7,7 +7,7 @@ Common vulnerabiltiies added for testing. Currently supporting:
   - A7:2017-Cross-Site Scripting (Reflective XSS)
   - A1:2017-Injection (Remote Code Execution)
 
-Using HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 (PHP)
+Utilising HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 (PHP)
 
 To use:
 - Navigate to directory - 'PacketSniffing'
