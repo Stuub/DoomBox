@@ -19,7 +19,7 @@ Common vulnerabiltiies added for testing. Currently supporting:
 
 <b>Docker:</b>
 
-  - Initialised in python script for ease of access!
+  - Initialised through a Python script for ease of access!
   - Hugely greater scalability for vulnerabilities
   - Dedicated Apache Web Server (Reverse Shells are reliable & accurate)
   - Ran over a 172.16.0.0/16 subnet on port 8080
