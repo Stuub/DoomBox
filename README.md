@@ -12,9 +12,9 @@ Utilising HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 
 
 <h2>To use:</h2>
 
-1. `git clone https://github.com/Stuub/PacketSniffing`
+1. `git clone https://github.com/Stuub/DoomBox`
 
-2. `cd PacketSniffing`
+2. `cd DoomBox`
 
 3. `python3 server.py`
 
