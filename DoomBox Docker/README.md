@@ -1,18 +1,25 @@
-Automated setup for an insecure login page, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment for your localhost!
+<h1> Docker Instance (Full CTF Build) </h1> 
 
+<b> The full CTF build of DoomBox is exclusively available on the Docker instance, providing an intermediate-level challenge for cybersecurity enthusiasts and professionals seeking to enhance their penetration testing skills. </b>
 
-Common vulnerabiltiies added for testing. Currently supporting:
-  - A3:2017-Sensitive Data Exposure (HTTP Logins)
-  - A7:2017-Cross-Site Scripting (Reflective XSS)
-  - A1:2017-Injection (Remote Code Execution)
+<h3> To use: </h3>
 
-Using HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 (PHP)
+- Navigate to directory - 'DoomBox Docker'
+- `python3 server.py`
 
-To use:
-- Navigate to directory - 'PacketSniffing'
-- python3 server.py
+Your Docker will build, this will take no more than a few minutes and will run automatically.
 
-Then go to browser and type
-http://localhost:8000/index.html
+<b> You will be provided with the host address of attacking machine and a URL to the web server, where you can get started! </b>
 
-From here you can use the page as if it were any other website! Enjoy :)
+3 Flags to retrieve! One flag for each level of privilege gained.
+
+<h3> Flag 1: www-data 
+<br>
+Flag 2: Bob
+<br>
+
+Flag 3: root 
+
+</h3>
+
+Happy Hacking!
