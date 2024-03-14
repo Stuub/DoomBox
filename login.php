@@ -11,9 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($username === $valid_username && $password === $valid_password) {
         // Authentication successful
-        echo "Login successful!";
-        echo "Your username is: " . $username;
-        echo "Your password is: " . $password;
+        echo "Login successful!", "<br>";
+        echo "Welcome back " . $username, "<br>";
+        echo "Click here to go to the <a href='rce.php'>RCE page</a>.";
     } else {
         // Authentication failed
         echo "Sorry ". $username . " Invalid username or password.";
