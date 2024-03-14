@@ -1,12 +1,23 @@
 <h2>DoomBox</h2>
-An automated insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment for your localhost!
+An automated insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment! Available for both your localhost and docker instances!
+<br><br>
+<h3>Full CTF build of DoomBox is available on the Docker Instance *ONLY*</h3>
 
+<br>
 
-Common vulnerabiltiies added for testing. Currently supporting:
+Common vulnerabiltiies added for web server. Currently supporting:
   - [A3:2017-Sensitive Data Exposure (HTTP Logins)](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure "A3:2017-Sensitive Data Exposure (HTTP Logins)")
   - [A2:2017-Broken Authentication (Login Page Bruteforcing)](https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication "A2:2017-Broken Authentication (Login Page Bruteforcing)")
   - [A7:2017-Cross-Site Scripting (Reflective XSS)](https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS))
   - [A1:2017-Injection (Remote Code Execution)](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection "A1:2017-Injection (Remote Code Execution)")
+
+What to expect of the Full CTF:
+  
+  - Multi-Level Privilege Escalation
+  - Privilege Escalation via Cron Job Vulnerability
+  - Exploiting Set User ID (SUID) Permissions
+    
+<br> <b> 3 Flags to capture! One at each level of privilege </b>
 
 <h2>Lite vs Docker</h2>
 
@@ -19,10 +30,10 @@ Common vulnerabiltiies added for testing. Currently supporting:
 
 <b>Docker:</b>
 
+  - Full CTF: Web to Root
   - Initialised through a Python script for ease of access!
   - Hugely greater scalability for vulnerabilities
   - Dedicated Apache Web Server (Reverse Shells are reliable & accurate)
-  - Ran over a 172.16.0.0/16 subnet on port 8080
 
 <br> 
 
@@ -43,3 +54,9 @@ Common vulnerabiltiies added for testing. Currently supporting:
 <h2>RCE</h2>
 
 ![whatTheShell](https://github.com/Stuub/PacketSniffing/assets/60468836/6ac42568-61cc-4fa1-ab21-fba177437858)
+
+<h2> Privilege Escalation! </h2>
+
+![image](https://github.com/Stuub/DoomBox/assets/60468836/feb01496-dbcf-492b-a706-ebb2e8bd1a60)
+
+
