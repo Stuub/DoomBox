@@ -11,8 +11,12 @@ Common vulnerabiltiies added for testing. Currently supporting:
 Utilising HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 (PHP)
 
 <h2>To use:</h2>
-- Navigate to directory 'PacketSniffing'
-- python3 server.py
+
+1. `git clone https://github.com/Stuub/PacketSniffing`
+
+2. `cd PacketSniffing`
+
+3. `python3 server.py`
 
 Then go to browser and visit
 http://localhost:8000/index.html
