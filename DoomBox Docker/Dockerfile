@@ -42,7 +42,7 @@ RUN chown root:root /usr/local/bin/suid
 RUN chmod u+s,u+x /usr/local/bin/suid
 RUN rm /home/Bob/suid.c
 
-RUN echo "What are you doing here?!?!" > /var/www/notFlag.txt
+RUN echo "What are you doing here?!?!" > /var/www/html/totallynotaflag.txt
 RUN echo "Bob = Pwnd! >:)" > /home/Bob/flag.txt
 RUN echo "R00ted! (⌐■_■)" > /root/flag.txt
 
