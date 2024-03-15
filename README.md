@@ -1,6 +1,12 @@
 <h2>DoomBox</h2>
 An automated insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment! Available for both your localhost and docker instances!
 <br><br>
+
+<h3>"TLDR, Let me play":</h3>
+
+`└─$ docker run -p 80:80 -d docker.io/stuub/doomed:latest`
+<br>
+<h2></h2>
 <h3>Full CTF build of DoomBox is available on the Docker Instance *ONLY*</h3>
 
 <br>
