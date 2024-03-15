@@ -1,5 +1,5 @@
 <h2>DoomBox</h2>
-An automated insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired testing environment! Available for both your localhost and docker instances!
+An automated insecure web server, initially developed for a packet sniffing and traffic analysis demo in my Cyber Clinic workshops. Now evolved into an OWASP inspired CTF! Available for both your localhost and docker instances!
 <br><br>
 
 <h3>"TLDR, Let me play":</h3>
