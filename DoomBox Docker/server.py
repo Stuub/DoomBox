@@ -26,7 +26,7 @@ class DockerContainer:
             subprocess.Popen(f"docker rm -f {self.container_id}", stdout=subprocess.PIPE, shell=True)
             time.sleep(3)
         # Start a new container
-        subprocess.Popen("docker run -d --name doombox_container -p 8080:8080 doombox", stdout=subprocess.PIPE, shell=True)
+        subprocess.Popen("docker run -d --name doombox_container -p 80:80 doombox", stdout=subprocess.PIPE, shell=True)
         print("Initialising...")
         time.sleep(10)  # Wait for the Docker container to initialize
 
