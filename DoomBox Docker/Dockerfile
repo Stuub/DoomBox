@@ -46,11 +46,8 @@ RUN echo "What are you doing here?!?!" > /var/www/html/totallynotaflag.txt
 RUN echo "Bob = Pwnd! >:)" > /home/Bob/flag.txt
 RUN echo "R00ted! (⌐■_■)" > /root/flag.txt
 
-# Change the Apache listening port to 8080
-RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf /etc/apache2/sites-enabled/000-default.conf
-
 # Inform Docker that the container is listening on the specified port at runtime.
-EXPOSE 8080
+EXPOSE 80
 
 # Start Apache and cron
 CMD service cron start && apachectl -D FOREGROUND
