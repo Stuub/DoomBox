@@ -14,7 +14,7 @@ Utilising HTTP & PHP, initialises a server for each on ports 8000 (HTTP) & 8001 
 
 1. `git clone https://github.com/Stuub/DoomBox`
 
-2. `cd DoomBox`
+2. `cd DoomBox/DoomBox Lite`
 
 3. `python3 server.py`
 
